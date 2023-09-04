@@ -1,0 +1,6 @@
+*/venv/*
+settings.py
+../venv
+venv/
+.venv
+../venv/

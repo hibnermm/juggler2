@@ -7,4 +7,4 @@ from django.shortcuts import render
 
 def index(request):
   name = "ya"
-  return render(request, "base.html", {"name": namez})
+  return render(request, "base.html", {"name": name})
