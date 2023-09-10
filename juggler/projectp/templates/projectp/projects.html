@@ -5,4 +5,20 @@
   sapiente provident reprehenderit deleniti nesciunt ipsum optio repellendus
   voluptatem odit vero nihil sed earum placeat deserunt illo molestias enim!
 </p>
+
+<ul class="list-group">
+  {% for item in projects_list %}
+  <li class="list-group-item">
+    <span class="text-info"> Project: </span>
+    <span>{{ item.project.name}}</span>
+    <br />
+    <span class="text-info"> Task: </span>
+    <span>{{ item.task.description}}</span>
+    <br />
+    <span class="text-info"> Task status: </span>
+    <span>{{ item.task.status}}</span>
+    <br />
+  </li>
+  {% endfor %}
+</ul>
 {% endblock %}
